@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animal Life</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="./js/thumbnail.js"></script>
+        <script src="./js/cursorEvent.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky id="sky" radius="5000" color="cyan"></a-sky>
+            <a-entity id="places-container" thumbnail cursor-listener></a-entity>
+            <a-camera id="camera">
+            <a-entity
+            id="app-title"
+            position="0 0.73 -1"
+            text="font:exo2bold; align:center; width:2; color:darkblue; value:ANIMAL LIFE">    
+            </a-entity>
+        <a-entity 
+            id="camera-cursor" 
+            cursor 
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: #fff; shader: flat">
+        </a-entity>
+        </a-camera>
+        </a-scene>
+    </body>
+</html>
